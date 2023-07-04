@@ -8,6 +8,7 @@
   --blue: #04123f;
   --t-blue: #04123fa0;
   --t50-blue: #04123fc4;
+  --t90-blue: #04123f6f;
   --white-font: #ece8e8;
   --glow-font: #31d7a9;
   --box-blue: #07102f87;
@@ -389,7 +390,7 @@ nav .join-btn-container {
   object-position: top;
 }
 
-.movie-details {
+.movie-card-details {
   background-color: var(--card-blue);
   color: #fff;
   padding: 10px;
@@ -408,3 +409,33 @@ nav .join-btn-container {
 }
 
 /* Movie card ends */
+
+
+/* Movie details starts */
+.movie-details, .movie-cover-container {
+  width: 100%;
+}
+
+.movie-cover-container {
+  margin-top: -7rem;
+  height: 500px;
+  background: url('./component/assets/shazam-cover.jpg') no-repeat top;
+  position: relative;
+}
+
+.movie-cover-container::before {
+  content: "";
+  background-color: var(--t90-blue);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 
+.movie-cover-container img {
+  height: inherit;
+} */
+
+/* Movie details ends */
